@@ -7,8 +7,222 @@
     <title>MINI PROYECTO</title>
 </head>
 <body>
-    <h1 class="bg-black text-white">
-        hola mundo 
-    </h1>
+     <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo a la derecha -->
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50" alt="Logo" class="h-8">
+            </div>
+
+            <!-- Links en el centro -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Inicio</a>
+                <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Servicios</a>
+                <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Contacto</a>
+            </nav>
+
+            <!-- Botón en la esquina derecha -->
+            <a href="#" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Login</a>
+        </div>
+
+        <!-- Menú móvil -->
+        <div class="md:hidden flex justify-center py-2">
+            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Inicio</a>
+            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Servicios</a>
+            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido de la página -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center">Bienvenido Soy Elian Guerrero</h1>
+        <p class="text-center mt-4">Este es un ejemplo de una página web con un header responsive.</p>
+        <div class="mt-8 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+            <!-- Caja izquierda -->
+            <div class="w-full md:w-1/4 bg-white p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-xl font-bold mb-4">Caja Izquierda</h2>
+                <p>Contenido de la caja izquierda. Puedes añadir texto, imágenes, etc.</p>
+            </div>
+
+            <!-- Imagen centrada -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="./src/styles/img/Background.png" alt="Imagen central" class="rounded-lg shadow-md">
+            </div>
+
+            <!-- Caja derecha -->
+            <div class="w-full md:w-1/4 bg-white p-6 rounded-lg shadow-md text-center">
+                <h2 class="text-xl font-bold mb-4">Caja Derecha</h2>
+                <p>Contenido de la caja derecha. Puedes añadir texto, imágenes, etc.</p>
+            </div>
+        </div>
+         <!-- Botón "My Projects" debajo de la imagen -->
+         <div class="mt-6 flex justify-center">
+            <a href="#" class="px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition duration-300">
+                My Projects
+            </a>
+        </div>
+
+
+        <!-- Nueva sección: Who I Am -->
+        <section class="mt-12">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <!-- Imagen a la izquierda -->
+                <div class="w-full md:w-1/4">
+                    <img src="./src/styles/img/WhatsApp Image 2025-02-26 at 7.07.57 PM.jpeg" alt="Imagen izquierda" class="rounded-lg shadow-md">
+                </div>
+
+                <!-- Contenido central -->
+                <div class="w-full md:w-1/2 text-center">
+                    <h2 class="text-2xl font-bold mb-4">Who I Am</h2>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <a href="#" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                        Show My Projects
+                    </a>
+                </div>
+
+                <!-- Imágenes a la derecha -->
+                <div class="w-full md:w-1/4 space-y-4">
+                    <img src="./src/styles/WhatsApp Image 2025-02-26 at 7.07.57 PM (1).jpeg" alt="Imagen derecha 1" class="rounded-lg shadow-md">
+                    <img src="./src/styles/img/WhatsApp Image 2025-02-26 at 7.07.58 PM.jpeg" alt="Imagen derecha 2" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Nueva sección: My Skills -->
+        <section class="mt-12">
+            <h2 class="text-3xl font-bold text-center mb-8">My Skills</h2>
+
+            <div class="flex flex-col md:flex-row items-start justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <!-- Tabla de habilidades (70% del ancho) -->
+                <div class="w-full md:w-7/12">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Rectángulos para logos de lenguajes -->
+                        <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                            <img src="./src/styles/img/css-3.png" alt="Logo 1" class="h-10">
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                            <img src="./src/styles/img/github.png" alt="Logo 2" class="h-10">
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                            <img src="./src/styles/img/html-5.png" alt="Logo 3" class="h-10">
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                            <img src="./src/styles/img/js (1).png" alt="Logo 4" class="h-10">
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                            <img src="./src/styles/img/lenguaje-de-codificacion (1).png" alt="Logo 5" class="h-10">
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                            <img src="./src/styles/img/lenguaje-de-programacion-php.png" alt="Logo 6" class="h-10">
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                            <img src="./src/styles/img/mecanografiado.png" alt="Logo 7" class="h-10">
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                            <img src="./src/styles/img/piton.png" alt="Logo 8" class="h-10">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recuadro de experiencia (30% del ancho) -->
+                <div class="w-full md:w-3/12 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Experiencia</h3>
+                    <p class="mb-4">Más de <span class="font-bold">5 años</span> de experiencia en desarrollo web y programación.</p>
+                    <a href="#" class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 block text-center">
+                        Descargar CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Nueva barra: Habilidades Adicionales -->
+        <section class="mt-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Habilidades Adicionales</h2>
+
+            <!-- Barra de logos -->
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <img src="https://via.placeholder.com/50" alt="Logo adicional 1" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <img src="https://via.placeholder.com/50" alt="Logo adicional 2" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <img src="https://via.placeholder.com/50" alt="Logo adicional 3" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <img src="https://via.placeholder.com/50" alt="Logo adicional 4" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <img src="https://via.placeholder.com/50" alt="Logo adicional 5" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <img src="https://via.placeholder.com/50" alt="Logo adicional 6" class="h-10">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Nueva sección: The Works Closest to My Heart -->
+<section class="mt-12 flex items-center">
+    <!-- Título a la izquierda -->
+    <div class="w-1/4 flex justify-center">
+        <h2 class="text-3xl font-bold text-center">The Works Closest to My Heart</h2>
+    </div>
+
+    <!-- Imágenes en fila -->
+    <div class="w-3/4 flex justify-center space-x-8">
+        <div class="transform transition-transform duration-300 hover:scale-110">
+            <img src="https://via.placeholder.com/200" alt="Imagen 1" class="rounded-lg shadow-md">
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-110">
+            <img src="https://via.placeholder.com/200" alt="Imagen 2" class="rounded-lg shadow-md">
+        </div>
+        <div class="transform transition-transform duration-300 hover:scale-110">
+            <img src="https://via.placeholder.com/200" alt="Imagen 3" class="rounded-lg shadow-md">
+        </div>
+    </div>
+</section>
+
+
+<!-- Nueva sección: Formulario -->
+<section class="mt-12 mx-4 md:mx-8 lg:mx-16">
+    <!-- Título centrado -->
+    <h2 class="text-3xl font-bold text-center mb-8">Let's Have a Chat</h2>
+
+    <!-- Formulario -->
+    <form class="bg-white p-6 rounded-lg shadow-md">
+        <!-- Campo: Your Name -->
+        <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+        </div>
+
+        <!-- Campo: Email -->
+        <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+        </div>
+
+        <!-- Campo: Chat Here (más grande) -->
+        <div class="mb-6">
+            <label for="message" class="block text-sm font-medium text-gray-700">Chat Here</label>
+            <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+        </div>
+
+        <!-- Botón: Submit Here -->
+        <div class="flex justify-center">
+            <button type="submit" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                Submit Here
+            </button>
+        </div>
+    </form>
+</section>
+    </main>
 </body>
 </html>
