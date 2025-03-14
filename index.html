@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/output.css">
+    <script src="./src/scripts/habilides.js" defer></script>
     <title>MINI PROYECTO</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
             <a href="#Skills" class="px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
                 Skills
             </a>
-            <a href="#proyectos" class="px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+            <a href="http://127.0.0.1:5502/proyectos.html" class="px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
                 Projects
             </a>
         </nav>
@@ -42,7 +43,7 @@
         <a href="#" class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
             Skills
         </a>
-        <a href="#" class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+        <a href="http://127.0.0.1:5502/proyectos.html" class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
             Projects
         </a>
     </div>
@@ -116,7 +117,7 @@
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-start justify-center space-y-8 md:space-y-0 md:space-x-8">
         <!-- Tabla de habilidades (70% del ancho) -->
         <div class="w-full md:w-7/12">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="contenedor_habilidades">
                 <!-- Rectángulos para logos de lenguajes -->
                 <div class="bg-deepBlue p-6 rounded-lg shadow-md flex items-center justify-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                     <img src="./src/styles/img/piton.png" alt="Logo 1" class="h-10">

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/scripts/proyectos.js" defer></script>
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <title>Proyectos</title>
+</head>
+<body>
+    <!-- Header -->
+<header class="bg-dark shadow-md">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <!-- Logo a la derecha -->
+        <div class="flex items-center">
+            <img src="./src/styles/img/tierra.png" alt="Logo" class="h-20">
+        </div>
+
+        <!-- Links en el centro -->
+        <nav class="hidden md:flex space-x-4">
+            <a href="http://127.0.0.1:5502/index.html"
+                class="px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+                Home
+            </a>
+            <a href="https://github.com/"
+                class="px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+                Proyectos
+            </a>
+            <a href="https://www.linkedin.com/feed/"
+                class="px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+                Hire me
+            </a>
+        </nav>
+
+        <!-- Botón en la esquina derecha -->
+        <a href="https://mail.google.com"
+            class="px-4 py-2 bg-highlight text-dark rounded hover:bg-light hover:text-dark transition-all duration-300">
+            Contact
+        </a>
+    </div>
+
+    <!-- Menú móvil -->
+    <div class="md:hidden flex flex-col items-center py-2">
+        <a href="http://127.0.0.1:5502/index.html"
+            class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+            Home
+        </a>
+        <a href="https://github.com/"
+            class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+            Proyectos
+        </a>
+        <a href="https://www.linkedin.com/feed/"
+            class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+            Hire me
+        </a>
+    </div>
+</header>
+
+
+<!-- Contenido de la página -->
+<main class="bg-gradient-to-b from-[rgb(0,4,20)] to-[rgb(42,66,114)] py-12" >
+    <h1 class="text-5xl font-bold text-center text-highlight mb-8">Mi portafolio</h1>
+    <p class="text-center text-light mb-8">Mira mis proyectos y habilidades</p>
+
+    <div class="w-full p-4 cards-grid gap-6 justify-center flex flex-wrap " id="card_container">
+
+        <!-- <div class="shadow-xl w-80 rounded-md border border-gray-200 cursor-pointer transform transition-transform duration-300 hover:scale-110 ">
+            <figure class="w-full aspect-square overflow-hidden">
+                <img src="./src/styles/img/carrito de compras mp.png" alt="nombre del producto" class="w-full object-cover">
+            </figure>
+            <div aria-label="card content" class="px-4 pt-4 border-t-1 flex flex-col gap-2 border-gray-300  text-gray-300">
+                <h3 class="text-xl text-white">Carrito de Compras</h3>
+                <p>Este es mi primer diseño de un apartado de compra de articulos en una tienda digital</p>
+                <div class="flex justify-between">        
+            </div>
+        </div>
+        </div> -->
+    </div>
+
+    <!-- Botón "My Projects" debajo de la imagen -->
+    <div class="mt-8 flex justify-center">
+        <a href="https://github.com/"
+            class="px-6 py-3 bg-highlight text-dark rounded-lg hover:bg-light hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+            My Projects
+        </a>
+    </div>
+</body>
+</html>
