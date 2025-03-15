@@ -7,43 +7,43 @@ const habilidades = [
   {
     nombre: "CSS",
     nivel: "Principiante",
-    imagen: "",
+    imagen: "https://cdn-icons-png.flaticon.com/128/732/732190.png",
   },
   {
     nombre: "GitHub",
     nivel: "Principiante",
-    imagen: "",
+    imagen: "https://cdn-icons-png.flaticon.com/128/2111/2111432.png",
   },
   {
     nombre: "HTML",
     nivel: "Principiante",
-    imagen: "",
+    imagen: "https://cdn-icons-png.flaticon.com/128/1/1975.png",
   },
   {
     nombre: "JavaScript",
     nivel: "Principiante",
-    imagen: "",
+    imagen: "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
   },
   {
     nombre: "Programacion",
     nivel: "Principiante",
-    imagen: "",
+    imagen: "https://cdn-icons-png.flaticon.com/128/143/143655.png",
   },
   {
     nombre: "Codificacion",
     nivel: "Principiante",
-    imagen: "",
+    imagen: "https://cdn-icons-png.flaticon.com/128/25/25252.png",
   },
   {
     nombre: "Desarrollo Web",
     nivel: "Principiante",
-    imagen: "",
+    imagen: "https://cdn-icons-png.flaticon.com/128/5831/5831220.png",
   },
 ];
 
 function generarhabilidades(habilidades) {
   const contenedorHabilidades = document.querySelector(
-    "grid grid-cols-2 md:grid-cols-4 gap-4"
+    "#contenedor_habilidades"
   );
 
   contenedorHabilidades.innerHTML = "";
@@ -57,3 +57,30 @@ function generarhabilidades(habilidades) {
     contenedorHabilidades.innerHTML += tarjetaHabilidad;
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  generarhabilidades(habilidades);
+});
+
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// Función para alternar la visibilidad del menú
+function toggleMenu() {
+  mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("active");
+}
+
+// Asignar el evento de clic al botón de toggle
+menuToggle.addEventListener("click", toggleMenu);
+
+// Cerrar el menú al hacer clic fuera de él
+document.addEventListener("click", (event) => {
+  if (
+    !mobileMenu.contains(event.target) &&
+    !menuToggle.contains(event.target)
+  ) {
+    mobileMenu.classList.add("hidden");
+    mobileMenu.classList.remove("active");
+  }
+});

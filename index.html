@@ -35,12 +35,20 @@
         </a>
     </div>
 
-    <!-- Menú móvil -->
-    <div class="md:hidden flex flex-col items-center py-2">
-        <a href="#" class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
-            About ME
+    <!-- Botón de toggle para móviles -->
+    <button id="menu-toggle" class="md:hidden text-light focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+</div>
+
+     <!-- Menú móvil (oculto por defecto) -->
+     <div id="mobile-menu" class="md:hidden flex flex-col items-center py-2">
+        <a href="#whoiam" class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+            About Me
         </a>
-        <a href="#" class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
+        <a href="#Skills" class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
             Skills
         </a>
         <a href="http://127.0.0.1:5502/proyectos.html" class="w-full text-center px-4 py-2 bg-transparent text-light rounded hover:bg-highlight hover:text-dark hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300">
@@ -87,7 +95,7 @@
     <div class="container mx-auto px-8 flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
         <!-- Imagen a la izquierda -->
         <div class="w-full md:w-1/4">
-            <img src="./src/styles/WhatsApp Image 2025-02-26 at 7.07.57 PM (1).jpeg" alt="Imagen izquierda" class="rounded-lg shadow-md">
+            <img src="./src/styles/img/WhatsApp Image 2025-02-26 at 7.07.57 PM (1).jpeg" alt="Imagen izquierda" class="rounded-lg shadow-md">
         </div>
 
         <!-- Contenido central -->
