@@ -65,16 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 
-// Función para alternar la visibilidad del menú
 function toggleMenu() {
   mobileMenu.classList.toggle("hidden");
   mobileMenu.classList.toggle("active");
 }
 
-// Asignar el evento de clic al botón de toggle
 menuToggle.addEventListener("click", toggleMenu);
 
-// Cerrar el menú al hacer clic fuera de él
 document.addEventListener("click", (event) => {
   if (
     !mobileMenu.contains(event.target) &&
